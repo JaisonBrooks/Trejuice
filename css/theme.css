@@ -1,0 +1,215 @@
+body {
+    margin-top: 70px;
+    color: #e5e5e5;
+    background: #555555 url("/img/wood_bg.png") repeat fixed center center;
+}
+.navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    font-size: 20px;
+    transition: ease 200ms;
+    -webkit-transition: ease 200ms;
+}
+.navbar:hover {
+    box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
+}
+#navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color:#fff;
+}
+.navbar-admin {
+}
+.navbar-default {
+    background-color: #B71C1C!important;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.row {
+    padding: 8px 8px;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes colorChange {
+    0%   {color: #3f51b5;}
+    6%  {color: #4285f4}
+    12%   {color: #03a9f4;}
+    18%   {color: #00bcd4;}
+    24%   {color: #009688;}
+    30%   {color: #8bc34a;}
+    36%   {color: #cddc39;}
+    42%   {color: #ffeb3b;}
+    48%   {color: #ff9800;}
+    54%   {color: #ff5722;}
+    60%   {color: #ff5722;}
+    66%   {color: #f44336;}
+    72%   {color: #f44336;}
+    78%   {color: #e91e63;}
+    84%   {color: #9c27b0;}
+    90%   {color: #673ab7;}
+    100%   {color: #3f51b5;}
+}
+
+/* Standard syntax */
+@keyframes colorChange {
+    0%   {color: #3f51b5;}
+    6%  {color: #4285f4}
+    12%   {color: #03a9f4;}
+    18%   {color: #00bcd4;}
+    24%   {color: #009688;}
+    30%   {color: #8bc34a;}
+    36%   {color: #cddc39;}
+    42%   {color: #ffeb3b;}
+    48%   {color: #ff9800;}
+    54%   {color: #ff5722;}
+    60%   {color: #ff5722;}
+    66%   {color: #f44336;}
+    72%   {color: #f44336;}
+    78%   {color: #e91e63;}
+    84%   {color: #9c27b0;}
+    90%   {color: #673ab7;}
+    100%   {color: #3f51b5;}
+}
+
+.text-version {
+    cursor:default;
+    margin-left: 2px;
+    margin-right:2px;
+    -webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+    transition: background 0.5s linear;
+}
+.text-version:hover {
+    -webkit-animation: colorChange 4s infinite; /* Chrome, Safari, Opera */
+    animation: colorChange 4s infinite;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.col-border-right {
+    border-right: 1px solid rgba(0,0,0,0.07);
+}
+.card {
+    min-height: 20px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
+    border-radius: 2px;
+    border: 0;
+}
+.card-dark {
+    min-height: 20px;
+    background-color: #444;
+    box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
+    border-radius: 2px;
+    border: 0;
+}
+.card-body {
+    padding: 2px 32px !important;
+}
+/*.card-outside:hover {*/
+    /*background-color: #f9f9f9;*/
+    /*margin-left: -5px;*/
+    /*margin-right: -5px;*/
+    /*box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);*/
+/*}*/
+.card-outside:active {
+    background-color: #eeeeee;
+}
+.card-outside {
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    border-radius: 2px;
+    transition: ease 200ms;
+}
+.card-outside-not-active:hover {
+    background-color: #f9f9f9;
+}
+.card-outside-dark:active {
+    background-color: #555555;
+}
+.card-outside-dark {
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    border-radius: 2px;
+    transition: ease 200ms;
+}
+.card-outside-not-active {
+    border-bottom: 1px solid #ccc;
+    border-radius: 2px;
+}
+.card-outside-colored-not-active {
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    border-radius: 2px;
+    /*background-color: #009688;*/
+    background-color: #666;
+
+}
+.card-outside-colored-not-active:hover {
+    /*background-color: #00877a;*/
+    background-color: #777;
+}
+.card-outside-colored-not-active .card-body {
+    color:#fff;
+}
+
+/** OVERRIDE THEM FROM BOOTSTRAP AND MATERIAL **/
+.dropdown-menu li a:hover, .dropdown-menu-default li a:hover {
+    color: #B71C1C;
+}
+.dropdown-menu {
+    background-color: #eee !important;
+}
+a {
+    color: #B71C1C;
+}
+a:hover {
+    color: #be3232;
+}
+.link-admin {
+    color: #555555 !important;
+    display: block;
+}
+
+/** NEW ELEMENTS **/
+.divider-line {
+    color: #444;
+}
+
+
+/** GENERAL **/
+.footer {
+    background-color: #222222;
+    padding: 28px 8px;
+}
+.footer-headings {
+    font-size: 18px;
+}
+.col-social {
+}
+.social-icon {
+    padding:4px;
+    height: 72px;
+    width: 72px;
+    transition: ease 200ms;
+    -webkit-transition: ease 200ms;
+}
+.social-icon:hover {
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+}
+pre {
+    background-color: #555;
+}
