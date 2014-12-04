@@ -16,6 +16,13 @@ if (isset($_GET)) {
         echo get_starting_card_dark_html();
         echo get_starting_card_dark_body_html();
         echo "<h1>" .$TYPE."</h1>";
+        echo '
+        <form action="inc/upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+        ';
         echo get_a_crap_ton_of_whitespace();
         echo get_ending_card_body_html();
         echo get_ending_card_html();

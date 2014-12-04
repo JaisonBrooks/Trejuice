@@ -213,3 +213,9 @@ a:hover {
 pre {
     background-color: #555;
 }
+.navbar .navbar-nav .open .dropdown-menu > li > a {
+    color: rgba(0, 0, 0, 0.84) !important;
+}
+.navbar .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #B71C1C !important;
+}
