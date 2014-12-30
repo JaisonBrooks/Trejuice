@@ -1,14 +1,14 @@
-<?php
+<?php require_once '../inc/authenticate.php';
 /**
  * Created by PhpStorm.
  * User: jbrooks
  * Date: 12/2/14
  * Time: 10:23 PM
  */
-$pageTitle = "Photography";
-include "inc/arrays.php";
-include "inc/header.php";
-include "inc/uielements.php";
+$pageTitle = "Videos";
+include "../inc/arrays.php";
+include "../inc/header.php";
+include "../inc/uielements.php";
 
 if (isset($_GET)) {
     if (isset($_GET["type"])) {
@@ -24,4 +24,4 @@ if (isset($_GET)) {
 
 
 
-include "inc/footer.php";
+include "../inc/footer.php";

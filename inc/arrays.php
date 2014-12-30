@@ -38,6 +38,11 @@ function get_nav_items_photography() {
         "href" => "/photography.php?type=all",
         "text" => "All"
     );
+    $navitems[7] = array (
+        "id" => "header_photography_upload",
+        "href" => "/photography.php?type=upload",
+        "text" => "Upload"
+    );
     //Sort Array
     sort($navitems);
     return $navitems;
@@ -125,4 +130,24 @@ function get_footer_social_icons() {
     );
     sort($socialitems);
     return $socialitems;
+}
+
+function get_photography_categories() {
+    $categories[0] = array (
+      "text" => "Food", "value" => "food"
+    );
+    $categories[1] = array (
+        "text" => "Landspace", "value" => "landspace"
+    );
+    $categories[2] = array (
+        "text" => "Life", "value" => "life"
+    );
+    $categories[3] = array (
+        "text" => "Nature", "value" => "nature"
+    );
+    $categories[4] = array (
+        "text" => "Skateboarding", "value" => "skateboarding"
+    );
+    sort($categories);
+    return $categories;
 }

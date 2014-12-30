@@ -13,19 +13,19 @@ date_default_timezone_set('America/Los_Angeles');
     <div class="footer">
         <div class="container">
             <div class="row row-centered">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3 col-sm-4">
                     <h5 class="footer-headings text-muted"><strong>Extra Things</strong></h5>
-                    <a href="../login.php?tag=footer" class="link-admin">Admin</a>
-                    <a href="../login.php?tag=footer" class="link-admin">Maybe</a>
-                    <a href="../login.php?tag=footer" class="link-admin">Some</a>
-                    <a href="../login.php?tag=footer" class="link-admin">More</a>
+                    <a href="../app/login.php?tag=footer" class="link-admin">Admin</a>
+                    <a href="../app/login.php?tag=footer" class="link-admin">Maybe</a>
+                    <a href="../app/login.php?tag=footer" class="link-admin">Some</a>
+                    <a href="../app/login.php?tag=footer" class="link-admin">More</a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-4">
                     <h5 class="footer-headings text-muted"><strong>Follow TREJUICE</strong></h5>
                     <div class="row row-centered">
                         <?php
                         foreach (get_footer_social_icons() as $item) {?>
-                            <div class="col-lg-3 col-social">
+                            <div class="col-lg-3 col-md-3 col-social">
                                 <a href="<?php echo $item['href'] ?>" target="_blank">
                                     <img src="<?php echo $item['img'] ?>" alt="<?php echo $item['text'] ?>" class="social-icon">
                                 </a>
@@ -34,10 +34,10 @@ date_default_timezone_set('America/Los_Angeles');
                        <?php } ?>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <h5 class="footer-headings text-muted">Website by<br><strong>Jaison Brooks</strong></h5>
-                    <h6 class="text-muted text-right">Copyright &copy; <?php echo date('Y') ?> Jaison Brooks.<br>All rights reserved </h6>
-                    <h6 class="text-muted text-right">Content Copyright &copy; <?php echo date('Y') ?> Trevor Atkinson.<br>All rights reserved </h6>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <h5 class="footer-headings text-muted"><strong>Site Credit</strong></h5>
+                    <h6 class="text-muted ">Copyright &copy; <?php echo date('Y') ?> Jaison Brooks<br>All rights reserved </h6>
+                    <h6 class="text-muted ">Copyright &copy; <?php echo date('Y') ?> Trevor Atkinson<br>All rights reserved </h6>
 
                 </div>
 

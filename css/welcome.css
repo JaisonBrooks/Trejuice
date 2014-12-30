@@ -1,0 +1,184 @@
+body {
+    color: #e5e5e5;
+    background: #555555 url("/img/wood_bg.png") repeat fixed center center;
+}
+.row-centered {
+    text-align:center;
+}
+.row {
+    margin-bottom: 32px;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.content-section {
+    /*height: 100%;*/
+    /*width: 100%;*/
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.full-screen {
+    /*width:100%;*/
+    /*height:100%;*/
+    /*min-height:100%; position:relative;*/
+    /*position: fixed;*/
+    z-index: 0;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    /*background-color: rgba(50,50,50,0.5) !important;*/
+    background-color: rgba(25, 25, 25, 0.45) !important;
+}
+
+html, body {
+    height:100%;
+}
+
+.paragraph {
+    font-size: 1.4em;
+    line-height: 1.75;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}
+.paragraph-top {
+    margin-top: 3%;
+}
+.paragraph-bottom {
+    margin-bottom: 3%;
+}
+
+.vertical-center {
+    height:100%;
+    width:100%;
+    margin-top: 0;
+    text-align: center;  /* align the inline(-block) elements horizontally */
+}
+
+.vertical-center:before {    /* create a full-height inline block pseudo=element */
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+.vertical-center > .container {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* Video Section */
+/*.video-section .pattern-overlay {*/
+    /*background-color: rgba(71, 71, 71, 0.35);*/
+    /*background-color: rgba(25, 25, 25, 0.45);*/
+    /*min-height: 496px;*/
+    /*height:100%;*/
+     /*Incase of overlay problems just increase the min-height*/
+/*}*/
+.text-header, .text-subheader{
+    text-align:center;
+    color:#fff;
+}
+
+.centered-header {
+    padding: 64px 0 32px;
+}
+.text-header{
+    font-size: 6em;
+    font-family: 'Buenard', serif;
+    font-weight:bold;
+    text-transform: uppercase;
+    margin: 40px auto 0;
+    transition: ease 200ms;
+}
+.text-subheader{
+    font-size: 25px;
+    font-weight:lighter;
+    margin: 0 auto 15px;
+    transition: ease 200ms;
+}
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}
+/* END Video Section */
+
+.text-shadow {
+    text-shadow: 1px 1px 1px #222;
+    -webkit-text-shadow: 1px 1px 1px #222;
+    -moz-text-shadow: 1px 1px 1px #222;
+    transition: ease 200ms;
+}
+.text-shadow:hover {
+    text-shadow: 1px 1px 1px #000;
+    -webkit-text-shadow: 1px 1px 1px #000;
+    -moz-text-shadow: 1px 1px 1px #000;
+}
+.trans-div {
+    opacity: 0.75;
+    transition: opacity 300ms ease-in-out;
+}
+.trans-div:hover {
+    opacity: 0.95;
+}
+.video-div {
+    padding:16px;
+}
+.row-padded {
+    padding: 16px 64px;
+}
+.social-icon {
+    padding:8px;
+    max-height: 84px;
+    max-width: 84px;
+    transition: ease 200ms;
+    -webkit-transition: ease 200ms;
+    opacity: 0.75;
+}
+.social-icon:hover {
+    opacity: 1;
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+}
+.social-div {
+    padding:0 360px;
+}
+.text-section-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 3.75em;
+    /*color: #B71C1C;*/
+    color: #ffffff;
+    /*text-shadow: rgba(0,0,0,0.5) 0px 3px 3px;*/
+}
+.separator {
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid #999;
+    margin: 1em 0; padding: 0;
+}
+.col-border-right {
+    border-right: 1px solid rgba(175,175,175,0.6);
+}
+.mdi-lg {
+    font-size: 18pt;
+    padding:0 4px;
+}
+.video-controls {
+    padding: 0 24px 4px; margin-bottom: 0;
+}
+
+/* Small devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+    .col-border-right {
+        border-right: none;
+    }
+}

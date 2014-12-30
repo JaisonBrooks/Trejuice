@@ -1,7 +1,29 @@
+/**
+B71C1C - Red
+666666 - Light BG
+444444 - Default BG
+222222 - Darker BG
+E5E5E5 - Text color
+FFFFFF - Light text
+000000 - Black text
+777777 - Darker Text
+90A4AE - Light / Blue text
+**/
+
 body {
-    margin-top: 70px;
+    margin-top: 84px;
     color: #e5e5e5;
-    background: #555555 url("/img/wood_bg.png") repeat fixed center center;
+
+    background:
+        /* top, transparent red, faked with gradient */
+    linear-gradient(
+            rgba(0, 0, 0, 0.34),
+            rgba(0, 0, 0, 0.34)
+    ),
+        /* bottom, image */
+    url('https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/10661933_866942000012963_3684470559605071775_o.jpg') no-repeat fixed center;
+
+    /*background: #666666 url("https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/10661933_866942000012963_3684470559605071775_o.jpg") repeat fixed center center;*/
 }
 .navbar {
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
@@ -20,10 +42,8 @@ body {
 .navbar-admin {
 }
 .navbar-default {
-    background-color: #B71C1C!important;
+    background-color: #558B2F!important;
 }
-
-/* centered columns styles */
 .row-centered {
     text-align:center;
 }
@@ -111,10 +131,23 @@ body {
 }
 .card-dark {
     min-height: 20px;
-    background-color: #444;
+    /*background-color: #444;*/
+    background-color: rgba(0,0,0,0.55);
     box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
     border-radius: 2px;
     border: 0;
+}
+.card-body p {
+    color:#e5e5e5 !important;
+}
+.control-label {
+    color: #78909C !important;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.input-text {
+    color: #B0BEC5 !important;
+    font-size: 18px;
 }
 .card-body {
     padding: 2px 32px !important;
@@ -125,9 +158,9 @@ body {
     /*margin-right: -5px;*/
     /*box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);*/
 /*}*/
-.card-outside:active {
-    background-color: #eeeeee;
-}
+/*.card-outside:active {*/
+    /*background-color: #eeeeee;*/
+/*}*/
 .card-outside {
     border-bottom: 1px solid rgba(0,0,0,0.07);
     border-radius: 2px;
@@ -136,9 +169,9 @@ body {
 .card-outside-not-active:hover {
     background-color: #f9f9f9;
 }
-.card-outside-dark:active {
-    background-color: #555555;
-}
+/*.card-outside-dark:active {*/
+    /*background-color: #555555;*/
+/*}*/
 .card-outside-dark {
     border-bottom: 1px solid rgba(0,0,0,0.07);
     border-radius: 2px;
@@ -165,16 +198,16 @@ body {
 
 /** OVERRIDE THEM FROM BOOTSTRAP AND MATERIAL **/
 .dropdown-menu li a:hover, .dropdown-menu-default li a:hover {
-    color: #B71C1C;
+    color: #558B2F;
 }
 .dropdown-menu {
     background-color: #eee !important;
 }
 a {
-    color: #B71C1C;
+    color: #558B2F;
 }
 a:hover {
-    color: #be3232;
+    color: #669643;
 }
 .link-admin {
     color: #555555 !important;
@@ -199,8 +232,8 @@ a:hover {
 }
 .social-icon {
     padding:4px;
-    height: 72px;
-    width: 72px;
+    height: 64px;
+    width: 64px;
     transition: ease 200ms;
     -webkit-transition: ease 200ms;
 }
@@ -211,11 +244,62 @@ a:hover {
     -ms-transform: rotate(35deg);
 }
 pre {
-    background-color: #555;
+    background-color: rgba(255,255,255,0);
 }
 .navbar .navbar-nav .open .dropdown-menu > li > a {
     color: rgba(0, 0, 0, 0.84) !important;
 }
 .navbar .navbar-nav .open .dropdown-menu > li > a:hover {
-    color: #B71C1C !important;
+    color: #558B2F !important;
 }
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.bold {
+    font-weight: bold;
+}
+.modal-content {
+    background-color: #444;
+}
+.form-wrap.well.well-trans{
+    background-color: #444;
+    color: #e5e5e5;
+}
+
+.text-header{
+    font-size: 6.25em;
+    font-family: 'Buenard', serif;
+    font-weight:bold;
+    text-transform: uppercase;
+    margin: 40px auto 0;
+    transition: ease 200ms;
+}
+.text-subheader{
+    font-size: 25px;
+    font-weight:lighter;
+    margin: 0 auto 15px;
+    transition: ease 200ms;
+}
+
+.heading-logo {
+    max-width: 450px;
+    padding-top:32px;
+    padding-bottom: 64px;
+}
+.home-container {
+    background: none !important;
+}
+
+/*.text-header, .text-subheader{*/
+    /*text-align:center;*/
+    /*color:#fff;*/
+/*}*/
